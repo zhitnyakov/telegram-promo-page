@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZTNKV - Telegram канал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        telegram: '#0088cc',
+                        'telegram-dark': '#006ba6'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .tab-pane {
+            display: none;
+        }
+        .tab-pane.active {
+            display: block;
+        }
+    </style>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(103314053, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/103314053" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body class="bg-gray-50 min-h-screen font-sans">
+    <!-- Hero Section -->
+    <section class="bg-white text-gray-800 py-8">
+        <div class="container mx-auto px-2 text-center">
+            <!-- Аватарка -->
+            <div class="mb-8">
+                <img src="avatar.jpeg" alt="ZTNKV" class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto border-4 border-white shadow-lg object-cover">
+            </div>
+            
+            <!-- Приветствие -->
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                Привет! <br />👋 Я - Денис Житняков
+            </h1>
+            
+            
+            <!-- CTA Button -->
+            <a href="https://t.me/ZTNKV" target="_blank" class="inline-block bg-telegram text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-telegram-dark transition-colors shadow-lg">
+                ✈️ Мой телеграм-канал
+            </a>
+        </div>
+    </section>
+
+    <!-- Описание канала -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed text-left">
+                    Я пишу в свободном форме о том, как я занимаюсь IT, бизнесом, 
+                    управлением персоналом, ИИ, психологией и веду свой образ жизни.
+                </p>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed text-left">
+                    Пишу регулярно, прямо, с матом и только о том, что я действительно сам переживаю 
+                    и что меня заботит.
+                </p>
+                <div class="text-center">
+                    <a href="https://t.me/ZTNKV" target="_blank" class="inline-block bg-telegram text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-telegram-dark transition-colors shadow-lg">
+                        ✈️ Читать канал
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+                    Обо мне 👨‍💻
+                </h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="text-left">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">🚀 Предприниматель</h3>
+                            <p class="text-lg md:text-xl text-gray-600">
+                                Основатель компании <a href="https://dolphin-anty.com" target="_blank" class="text-telegram underline hover:no-underline font-semibold">Dolphin{anty}</a> 
+                                с численностью сотрудников 100+ человек и пользователей 3 000 000+
+                            </p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">💻 Инженер ПО</h3>
+                            <p class="text-lg md:text-xl text-gray-600">
+                                Владею 5 языками программирования, постоянно делаю и запускаю новые стартапы/проекты
+                            </p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">🏠 Личное</h3>
+                            <ul class="text-lg md:text-xl text-gray-600 space-y-2">
+                                <li>📍 33 года, живу в Москве</li>
+                                <li>💑 Женат уже 10+ лет</li>
+                                <li>👨‍👩‍👧‍👦 Двое детей</li>
+                            </ul>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">🎯 Цель</h3>
+                            <p class="text-lg md:text-xl text-gray-600">
+                                Дети всегда должны быть лучше родителей. Стараюсь быть лучше своего отца и построить фундамент для своих сыновей, чтобы они стали лучше меня.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="https://t.me/ZTNKV" target="_blank" class="inline-block bg-telegram text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-telegram-dark transition-colors shadow-lg">
+                        ✈️ Подписаться
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Карусель постов -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-2">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+                Лучшие посты канала
+            </h2>
+            
+            <!-- Вкладки -->
+            <div id="tab-buttons" class="flex flex-wrap justify-center mb-8 border-b border-gray-200">
+                <!-- Кнопки вкладок будут добавлены динамически -->
+            </div>
+
+            <!-- Контент вкладок -->
+            <div class="tab-content">
+                <!-- Психология -->
+                <div id="psychology" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/106" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/116" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/170" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/175" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/192" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/194" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/215" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/226" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/237" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/242" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Мужские проблемы -->
+                <div id="men-problems" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/133" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/157" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/161" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/165" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/196" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/208" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/218" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/221" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/222" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/224" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/239" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/248" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Бизнес -->
+                <div id="business" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/111" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/112" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/123" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/138" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/187" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Управление -->
+                <div id="management" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/114" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/145" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/160" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/168" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/209" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/211" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lifestyle -->
+                <div id="lifestyle" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/125" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/134" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/155" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/184" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/186" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/207" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/214" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/217" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/223" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/227" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/235" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/240" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/247" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ИИ -->
+                <div id="ai" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/126" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/137" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/204" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/219" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/228" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/229" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/230" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/231" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/232" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/233" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/234" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Полезные ссылки -->
+                <div id="useful-links" class="tab-pane">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/139" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/171" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/241" data-width="100%"></script>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm p-2">
+                            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="ZTNKV/243" data-width="100%"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="https://t.me/ZTNKV" target="_blank" class="inline-block bg-telegram text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-telegram-dark transition-colors shadow-lg">
+                    ✈️ Изучить все посты
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Финальный CTA -->
+    <section class="py-16 bg-gradient-to-r from-telegram to-telegram-dark text-white">
+        <div class="container mx-auto px-2 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Готов к росту?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Присоединяйся к сообществу единомышленников
+            </p>
+            <a href="https://t.me/ZTNKV" target="_blank" class="inline-block bg-white text-telegram px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                ✈️ Подписаться на канал
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-2 text-center">
+            <p>&copy; 2024 ZTNKV. Все права защищены.</p>
+            <p class="mt-2 text-gray-400">Telegram: <a href="https://t.me/ZTNKV" class="text-telegram underline hover:no-underline">@ZTNKV</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Функция для перемешивания массива
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Функция для перемешивания элементов внутри контейнера
+        function shuffleElements(container) {
+            const elements = Array.from(container.children);
+            const shuffled = shuffleArray(elements);
+            container.innerHTML = '';
+            shuffled.forEach(element => container.appendChild(element));
+        }
+
+        // Данные вкладок
+        const tabs = [
+            { id: 'psychology', name: '🧠 Психология' },
+            { id: 'men-problems', name: '💪 Мужские проблемы' },
+            { id: 'business', name: '💼 Бизнес' },
+            { id: 'management', name: '👥 Управление' },
+            { id: 'lifestyle', name: '🌟 Lifestyle' },
+            { id: 'ai', name: '🤖 ИИ' },
+            { id: 'useful-links', name: '🔗 Полезные ссылки' }
+        ];
+
+        // Инициализация
+        document.addEventListener('DOMContentLoaded', function() {
+            // Перемешиваем вкладки
+            const shuffledTabs = shuffleArray([...tabs]);
+            const tabButtonsContainer = document.getElementById('tab-buttons');
+            
+            // Создаем кнопки вкладок в рандомном порядке
+            shuffledTabs.forEach((tab, index) => {
+                const button = document.createElement('button');
+                button.className = index === 0 ? 
+                    'tab-button active px-6 py-3 font-semibold text-telegram border-b-2 border-telegram' :
+                    'tab-button px-6 py-3 font-semibold text-gray-600 hover:text-telegram transition-colors';
+                button.setAttribute('data-tab', tab.id);
+                button.textContent = tab.name;
+                tabButtonsContainer.appendChild(button);
+            });
+
+            // Показываем первую вкладку
+            const firstTab = shuffledTabs[0];
+            document.getElementById(firstTab.id).classList.add('active');
+
+            // Перемешиваем посты в каждой вкладке
+            shuffledTabs.forEach(tab => {
+                const tabContent = document.getElementById(tab.id);
+                if (tabContent) {
+                    const postsContainer = tabContent.querySelector('.grid');
+                    if (postsContainer) {
+                        shuffleElements(postsContainer);
+                    }
+                }
+            });
+
+            // Функционал переключения вкладок
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const tabId = button.getAttribute('data-tab');
+                    
+                    // Убираем активный класс у всех кнопок
+                    document.querySelectorAll('.tab-button').forEach(btn => {
+                        btn.classList.remove('active', 'text-telegram', 'border-telegram', 'border-b-2');
+                        btn.classList.add('text-gray-600');
+                    });
+                    
+                    // Добавляем активный класс к текущей кнопке
+                    button.classList.add('active', 'text-telegram', 'border-telegram', 'border-b-2');
+                    button.classList.remove('text-gray-600');
+                    
+                    // Скрываем все панели
+                    document.querySelectorAll('.tab-pane').forEach(pane => {
+                        pane.classList.remove('active');
+                    });
+                    
+                    // Показываем нужную панель
+                    const targetPane = document.getElementById(tabId);
+                    targetPane.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
